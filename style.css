@@ -3,7 +3,7 @@ body {
 }
 
 .header {
-    background-color: yellow;
+    background-color: #ffff00;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -46,4 +46,70 @@ body {
     display: block;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+main {
+    font-family: 'Zen Kurenaido', sans-serif;
+    background-image: linear-gradient(
+        180deg,
+        hsl(60deg 100% 50%) 0%,
+        hsl(60deg 91% 54%) 4%,
+        hsl(60deg 81% 54%) 7%,
+        hsl(60deg 70% 54%) 11%,
+        hsl(60deg 60% 53%) 14%,
+        hsl(60deg 50% 51%) 18%,
+        hsl(60deg 40% 50%) 24%,
+        hsl(60deg 33% 48%) 31%,
+        hsl(60deg 24% 45%) 43%,
+        hsl(60deg 14% 42%) 62%,
+        hsl(0deg 0% 38%) 100%);
+
+}
+
+.wrapper {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.header-main {
+    text-align: center;
+    /* margin-top: 20px; */
+}
+
+.block-t-shirt span {
+    text-align: center;
+    display: block;
+}
+
+.block-t-shirt {
+    margin: 30px;
+    border: 2px ;
+    border: 4px solid black;
+    border-radius: 5px;
+    background-color: rgb(158, 158, 158);
+}
+
+.buy-button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background-color: rgb(255, 254, 254);
+    color: rgb(0, 0, 0);
+    border: 1;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'Montserrat Alternates', sans-serif;;
+    margin-bottom: 10px;
+}
+
+.buy-button:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+.hr {
+    margin: 0;
+    padding: 0;
+    border: 3px solid black;
 }
