@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: yellow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.txt {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price {
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.price sup {
+    font-size: 20px;
+}
+
+.why {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-imgs {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-img span {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
