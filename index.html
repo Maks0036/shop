@@ -15,6 +15,7 @@
 
 <body>
     <header class="header">
+        <img onclick="namepers()" class="header-podarok" src="img/podarok.png" width="100px" >
         <div class="header-text">
             <span class="txt">ФУТБОЛКИ С ПРИНТАМИ</span><br>
             <span class="price">499 <sup>руб.</sup> </span><br>
@@ -124,19 +125,55 @@
                     <button class="buy-button">Добавить в заказ</button>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
         </div>
+        <!-- 
+        <div class="korzina-txt">
+            <span>Ваш заказ</span>
+            <span>Корзина пуста</span>
+            <span>В корзине пусто</span>
+        </div> -->
+
+
+
+        <form class="korzina-form" action="">
+            <legend>Оформление заказа</legend>
+            <label for="">
+                <span class="label-text">Ваше имя:</span>
+                <input class="korzina-input" type="text" name="username" placeholder="Ваше имя" required>
+            </label>
+
+            <label for="">
+                <span class="label-text">Ваша фамилия:</span>
+                <input class="korzina-input" type="text" name="username" placeholder="Ваша фамилия" required>
+            </label>
+
+            <label for="">
+                <span class="label-text">Электронная почта:</span>
+                <input class="korzina-input" type="email" name="email" placeholder="Электорнная почта" required>
+            </label>
+
+            <label for="">
+                <span class="label-text">Номер телефона:</span>
+                <input class="korzina-input" type="tel" name="tel" placeholder="Номер телефона" required>
+            </label>
+        </form>
+
+        <span class="oplata">Оплата онлайн</span>
+        <hr class="hr2">
+        <button class="buy-button1">Перейти к оплате</button>
+
+        
+
+
+
 
     </main>
+
+
+    <!-- Тех.поддержка -->
+    <img class="tp" onclick="print_contact('newSkype','newTelegram')" src="img/tp.png" alt="" width="80px" >
+    <!-- Скрипты -->
+    <script src="script.js"></script>
 </body>
 
 </html>
