@@ -73,6 +73,12 @@ main {
     display: flex;
     margin: 20px auto;
     justify-content: center;
+    align-items: center;
+}
+
+.wrapper, .arrow:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .header-main {
@@ -91,6 +97,10 @@ main {
     border: 4px solid black;
     border-radius: 5px;
     background-color: rgb(158, 158, 158);
+}
+
+.block-t-shirt img {
+    object-fit: cover;
 }
 
 .buy-button {
@@ -230,12 +240,45 @@ main {
     position: fixed;
     right: 20px;
     bottom: 10px;
+    cursor: pointer;
 }
 
 .header-podarok {
     position: absolute;
     left: 10px;
     top: 10px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.ModalGift-content, .ModalTP-content{
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid grey;
+    width: 80%;
+}
+
+.close {
+    color: rgb(170, 170, 170);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: black;
     cursor: pointer;
 }
 

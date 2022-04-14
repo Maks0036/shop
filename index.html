@@ -10,12 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Zen+Kurenaido&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <title>Магазин футболок</title>
 </head>
 
 <body>
     <header class="header">
-        <img onclick="namepers()" class="header-podarok" src="img/podarok.png" width="100px" >
+        <img id="ModalGiftBtn" class="wow animate__animated animate__headShake header-podarok" src="img/podarok.png"
+            width="100px">
+        <div id="ModalGift" class="modal">
+            <div class="ModalGift-content">
+                <span class="close" id="close">&times;</span>
+                <p>Вам зачислен подарок в виде 50% скидки</p>
+            </div>
+        </div>
         <div class="header-text">
             <span class="txt">ФУТБОЛКИ С ПРИНТАМИ</span><br>
             <span class="price">499 <sup>руб.</sup> </span><br>
@@ -23,12 +32,13 @@
         </div>
         <div class="header-imgs">
             <div class="header-img">
-                <img src="img/sale.png" height="70" width="105" alt="">
+                <img class="wow animate__animated animate__bounce" src="img/sale.png" height="70" width="105" alt="">
                 <span>Низкие цены</span>
             </div>
 
             <div class="header-img">
-                <img src="img/gruzovik.png" height="90" width="98" alt="">
+                <img class="wow animate__animated animate__backInRight" src="img/gruzovik.png" height="90" width="98"
+                    alt="">
                 <span>Доставки по всей России</span>
             </div>
 
@@ -51,9 +61,12 @@
         </div>
 
         <div class="wrapper">
-
+            <div class="arrow">
+                <img src="img/left.PNG" width="50" onclick="rand_tshirt()" alt="">
+            </div>
             <div class="block-t-shirt">
-                <img src="img/photo.png" alt="" width="300px" height="260px">
+
+                <img id="block-img-1" src="img/tshirt-1.jpg" alt="" width="300px" height="300px">
                 <span>Футболка</span>
                 <span>499 руб</span>
                 <button onclick='alert("Добавить в заказ:\n1 \"Чёрная\" футболка ")' class="buy-button"> <img
@@ -61,12 +74,17 @@
             </div>
 
             <div class="block-t-shirt">
-                <img src="img/photo_1.png" alt="" width="300px" height="260px">
+                <img id="block-img-2" src="img/tshirt-2.jpg" alt="" width="300px" height="300px">
                 <span>Футболка</span>
                 <span>499 руб</span>
                 <button onclick="prompt('Введите ваше имя')" class="buy-button"> <img src="img/корзина.png" alt="">
                     Добавить заказ</button>
             </div>
+
+            <div class="arrow">
+                <img src="img/right.PNG" width="50" onclick="rand_tshirt()" alt="">
+            </div>
+
         </div>
         <section class="kupon">
             <div class="kupon-txt">
@@ -84,7 +102,7 @@
 
         <div class="wrapper2">
             <span class="ogl-how-size">Как выбрать размер?</span>
-            <div class="page-thirt">
+            <div class="page-thirt animate__animated animate__fadeInDown wow">
                 <div class="block-t-shirt">
                     <img src="img/photo2.png" alt="">
                     <span>Футболка</span>
@@ -105,7 +123,7 @@
                 </div>
             </div>
 
-            <div class="page-thirt">
+            <div class="page-thirt animate__animated animate__fadeInUp wow">
                 <div class="block-t-shirt">
                     <img src="img/photo2.png" alt="">
                     <span>Футболка</span>
@@ -162,7 +180,6 @@
         <hr class="hr2">
         <button class="buy-button1">Перейти к оплате</button>
 
-        
 
 
 
@@ -171,9 +188,24 @@
 
 
     <!-- Тех.поддержка -->
-    <img class="tp" onclick="print_contact('newSkype','newTelegram')" src="img/tp.png" alt="" width="80px" >
+    <img id="ModalTPBtn" class="animate__animated animate__shakeY wow tp" src="img/tp.png" alt="" width="80px">
+    <div id="ModalTP" class="modal">
+        <div class="ModalTP-content">
+            <span class="close" id="closeTP">&times;</span>
+            <p>Тех.поддержка</p>
+            <p>Skype: tp_store</p>
+            <p>Email: tp_store@gmail.com</p>
+            <p>Discord: tpStore#2700</p>
+        </div>
+    </div>
+
     <!-- Скрипты -->
     <script src="script.js"></script>
+    <!-- Анимация с прокруткой -->
+    <script src="lib/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
